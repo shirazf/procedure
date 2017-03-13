@@ -247,7 +247,9 @@ function draw() {
         if (cigarette.position < character.position){
            score = score + 1;
        }
-    
+        if (character.position.x > 530){
+            life = -1;
+        }
         
         text (score, 40, 100);
         text ("score:", 5, 100);
