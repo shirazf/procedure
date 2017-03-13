@@ -97,19 +97,19 @@ function draw() {
         cigarette.setCollider("rectangle", 0, 0, 40, 1);
     }
     //levels change
-    if (millis() >= 10000) {
+    if (score >= 2000) {
         level = 2;
         }
-    if (millis() >= 40000) {
+    if (score >= 5000) {
         level = 3;
     }
-    if (millis() >= 50000) {
+    if (score >= 7000) {
         level = 4;
     }
-    if (millis() >= 80000){
+    if (score >= 9000){
         level = 5;
     }
-    if (millis() >= 150000){
+    if (score >= 15000){
         level = 6
     }
     
